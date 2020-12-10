@@ -3,6 +3,7 @@ package com.infostackresearch.homefit.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,19 +19,30 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.infostackresearch.homefit.R;
 import com.infostackresearch.homefit.models.Plans;
 import com.infostackresearch.homefit.sessions.UserSessionManager;
+import com.infostackresearch.homefit.ui.PaymentActivity;
 
+import java.util.HashMap;
 import java.util.List;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 public class ViewpagerAdapter extends RecyclerView.Adapter<ViewpagerAdapter.PlanHolder> {
 
-    List<Plans> plansList;
-    Context mContext;
+    private boolean upgrade;
+    private List<Plans> plansList;
+    private Context mContext;
 
     public ViewpagerAdapter(Context mContext, List<Plans> plansList) {
         this.mContext = mContext;
         this.plansList = plansList;
+    }
+
+    public ViewpagerAdapter(Context mContext, List<Plans> plansList, boolean upgrade) {
+        this.mContext = mContext;
+        this.plansList = plansList;
+        this.upgrade = upgrade;
     }
 
     @NonNull
@@ -54,6 +66,8 @@ public class ViewpagerAdapter extends RecyclerView.Adapter<ViewpagerAdapter.Plan
         String encoding = "utf-8";
         holder.wv_description.loadDataWithBaseURL(null, description, mime, encoding, null);
 
+        if (upgrade)
+            holder.btn_subscribe.setText("Upgrade");
         holder.btn_subscribe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,8 +79,27 @@ public class ViewpagerAdapter extends RecyclerView.Adapter<ViewpagerAdapter.Plan
                     @Override
                     public void onClick(SweetAlertDialog sweetAlertDialog) {
                         UserSessionManager sessionManager = new UserSessionManager(mContext);
-                        if (sessionManager.checkLogin("PlanActivity"))
+                        if (sessionManager.checkLogin())
                             ((Activity) mContext).finish();
+                        HashMap<String, String> user = sessionManager.getUserDetails();
+                        String auth_token = user.get(UserSessionManager.KEY_AuthToken);
+                        String mobilenumber = user.get(UserSessionManager.KEY_Mobile);
+                        String amount = plansList.get(position).getPrice();
+                        String planid = plansList.get(position).getPlan_id();
+                        String discount = plansList.get(position).getDiscount();
+                        String product_title = plansList.get(position).getTitle();
+
+                        Intent intent = new Intent(mContext, PaymentActivity.class);
+                        intent.putExtra("product_title", product_title);
+                        intent.putExtra("auth_token", auth_token);
+                        intent.putExtra("mobilenumber", mobilenumber);
+                        intent.putExtra("amount", amount);
+                        intent.putExtra("planid", planid);
+                        intent.putExtra("discount", discount);
+                        intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
+
+                        mContext.startActivity(intent);
+
                         Toast.makeText(mContext, "Subscription Success", Toast.LENGTH_SHORT).show();
                         pDialog.dismissWithAnimation();
                     }
