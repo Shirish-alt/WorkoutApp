@@ -9,7 +9,6 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 public class ClientInstance {
 
     private static Retrofit retrofit;
-    //    private static final String BASE_URL = "https://geoattendance.infostackresearch.com/";
     private static final String BASE_URL = "http://ec2-13-232-21-118.ap-south-1.compute.amazonaws.com/homefitindia/public/index.php/api/";
 
     public static Retrofit getRetrofitInstance() {
