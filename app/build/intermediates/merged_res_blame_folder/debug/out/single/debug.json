@@ -1,0 +1,302 @@
+[
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/font_open_sans.ttf.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/font/open_sans.ttf"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/menu_navigation.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/menu/navigation.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_smartphone.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_smartphone.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_025_gym.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_025_gym.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_006_weight_scale.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_006_weight_scale.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_content_rv_level.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/content_rv_level.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_workoutman.jpg.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/workoutman.jpg"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_fitness.jpg.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/fitness.jpg"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_twotone_warning_24.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_twotone_warning_24.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_signup.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_signup.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_navigation.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_navigation.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_equipments.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_equipments.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_nav_header_main.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_pin_code.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_pin_code.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_bmi.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_bmi.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_home_black_24dp.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_workout.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_workout.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_payment.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_payment.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/font_poppins.ttf.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/font/poppins.ttf"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_house.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_house.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_profile_fragment.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/profile_fragment.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_money.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_money.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_kettlebell.png.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/kettlebell.png"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_rupee.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_rupee.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_plans.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_plans.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_dashboard.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_content_plan.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/content_plan.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_side_nav_bar.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_gallery.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_menu_gallery.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_arrow.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_arrow.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_content_rv_equipment.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/content_rv_equipment.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/anim_top_animation.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/anim/top_animation.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_notifications.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/menu_activity_main_drawer.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_dumbbell.png.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/dumbbell.png"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_loginimage.jpg.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/loginimage.jpg"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_profile.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_roundedbackground.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/roundedbackground.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_adpic.jpg.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/adpic.jpg"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_diet.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_diet.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_content_main.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_content_adviewpager.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/content_adviewpager.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_024_checklist.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_024_checklist.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_menu_camera.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/navigation_mobile_navigation.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_editprofile.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_editprofile.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_020_stopwatch.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_020_stopwatch.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/anim_bottom_animation.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/anim/bottom_animation.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_transgradient.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/transgradient.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_menu_slideshow.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_013_calendar.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_013_calendar.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_name.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_name.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_covid.png.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/covid.png"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_email.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_email.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_sport.jpg.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/sport.jpg"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_aerobics.png.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/aerobics.png"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_workout.png.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/workout.png"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_mysubscription.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_mysubscription.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/drawable_gradbg.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/drawable/gradbg.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_content_myplan.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/content_myplan.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_app_bar_main.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "/home/vpace/AndroidStudioProjects/hfi_app/app/build/intermediates/res/merged/debug/layout_activity_plan.xml.flat",
+        "source": "/home/vpace/AndroidStudioProjects/hfi_app/app/src/main/res/layout/activity_plan.xml"
+    }
+]
