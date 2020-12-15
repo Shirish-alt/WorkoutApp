@@ -11,7 +11,7 @@ import com.infostackresearch.homefit.models.DeliveryLocation;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//this is test
 public class DeliveryAddressActivity extends AppCompatActivity {
     RecyclerView rv_deliverylocation;
     List<DeliveryLocation> deliveryLocationList = new ArrayList<>();
