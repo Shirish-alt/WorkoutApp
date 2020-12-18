@@ -3,13 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_workout">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.infostackresearch.homefit.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/navigation_plans"
+        android:name="com.infostackresearch.homefit.ui.PlanActivity"
+        android:label="@string/menu_plans"
+        tools:layout="@layout/activity_plan" />
 
     <fragment
         android:id="@+id/navigation_workout"
@@ -18,25 +24,48 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
+        android:id="@+id/navigation_myactivity"
+        android:name="com.infostackresearch.homefit.ui.MyActivityFragment"
+        android:label="@string/menu_myactivity"
+        tools:layout="@layout/fragment_my_activity" />
+
+    <fragment
         android:id="@+id/navigation_diet"
         android:name="com.infostackresearch.homefit.ui.diet.DietFragment"
         android:label="@string/title_diet"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
+        android:id="@+id/navigation_pt"
+        android:name="com.infostackresearch.homefit.ui.PTFragment"
+        android:label="@string/title_pt"
+        tools:layout="@layout/fragment_pt" />
+
+    <fragment
+        android:id="@+id/navigation_Live"
+        android:name="com.infostackresearch.homefit.ui.LiveFragment"
+        android:label="@string/title_live"
+        tools:layout="@layout/fragment_live" />
+
+    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.infostackresearch.homefit.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+
     <fragment
         android:id="@+id/navigation_BMI"
         android:name="com.infostackresearch.homefit.ui.bmi.BmiFragment"
         android:label="@string/menu_bmi"
-        tools:layout="@layout/fragment_bmi"/>
+        tools:layout="@layout/fragment_bmi" />
 
+
+    <fragment
+        android:id="@+id/navigation_logout"
+        android:name="com.infostackresearch.homefit.ui.Logout"
+        android:label="@string/menu_logout" />
     <activity
-        android:id="@+id/navigation_plans"
-        android:name="com.infostackresearch.homefit.ui.PlanActivity"
-        android:label="@string/menu_plans"
-        tools:layout="@layout/activity_plan"/>
+        android:id="@+id/navigation_login"
+        android:name="com.infostackresearch.homefit.ui.LoginActivity"
+        android:label="@string/menu_login" />
 </navigation>

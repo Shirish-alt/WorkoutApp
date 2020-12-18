@@ -4,23 +4,46 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-<!--        <item-->
-<!--            android:id="@+id/navigation_home"-->
-<!--            android:icon="@drawable/ic_house"-->
-<!--            android:title="@string/menu_home" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/navigation_home"-->
+        <!--            android:icon="@drawable/ic_house"-->
+        <!--            android:title="@string/menu_home" />-->
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_house"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/navigation_subscription"
+            android:icon="@drawable/ic_025_gym"
+            android:title="@string/menu_mysubscription" />
         <item
             android:id="@+id/navigation_plans"
             android:icon="@drawable/ic_025_gym"
             android:title="@string/menu_plans" />
 
         <item
-            android:id="@+id/navigation_BMI"
+            android:id="@+id/navigation_workout"
             android:icon="@drawable/ic_006_weight_scale"
-            android:title="@string/menu_bmi" />
+            android:title="@string/menu_workoutlibrary" />
+        <item
+            android:id="@+id/navigation_myactivity"
+            android:icon="@drawable/ic_013_calendar"
+            android:title="@string/menu_myactivity" />
         <item
             android:id="@+id/navigation_diet"
             android:icon="@drawable/ic_diet"
             android:title="@string/title_diet" />
+
+        <item
+            android:id="@+id/navigation_pt"
+            android:icon="@drawable/ic_diet"
+            android:title="@string/title_pt" />
+
+        <item
+            android:id="@+id/navigation_Live"
+            android:icon="@drawable/ic_diet"
+            android:title="@string/title_live" />
+
         <item
             android:id="@+id/navigation_profile"
             android:icon="@drawable/ic_profile"
@@ -29,5 +52,9 @@
             android:id="@+id/navigation_logout"
             android:icon="@drawable/ic_arrow"
             android:title="@string/menu_logout" />
+        <item
+            android:id="@+id/navigation_login"
+            android:icon="@drawable/ic_arrow"
+            android:title="@string/menu_login" />
     </group>
 </menu>
