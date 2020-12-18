@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    app:menu="@menu/profile_edit_menu"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
@@ -74,6 +75,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginRight="32dp"
                 android:orientation="vertical"
+                android:visibility="gone"
                 android:padding="8dp">
 
                 <TextView

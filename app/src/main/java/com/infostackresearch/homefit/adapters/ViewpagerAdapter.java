@@ -1,7 +1,6 @@
 package com.infostackresearch.homefit.adapters;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -19,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.infostackresearch.homefit.R;
 import com.infostackresearch.homefit.models.Plans;
 import com.infostackresearch.homefit.sessions.UserSessionManager;
+import com.infostackresearch.homefit.ui.LoginActivity;
 import com.infostackresearch.homefit.ui.PaymentActivity;
 
 import java.util.HashMap;
@@ -56,10 +56,11 @@ public class ViewpagerAdapter extends RecyclerView.Adapter<ViewpagerAdapter.Plan
     @Override
     public void onBindViewHolder(@NonNull PlanHolder holder, int position) {
         holder.tv_title.setText(plansList.get(position).getTitle());
-        if (null != plansList.get(position).getSubtitle() && !plansList.get(position).getSubtitle().isEmpty())
-            holder.tv_subtitle.setVisibility(View.VISIBLE);
-        else
-            holder.tv_subtitle.setVisibility(View.GONE);
+//        if (null != plansList.get(position).getSubtitle() && !plansList.get(position).getSubtitle().isEmpty())
+//            holder.tv_subtitle.setVisibility(View.VISIBLE);
+//        else
+//            holder.tv_subtitle.setVisibility(View.GONE);
+        holder.tv_subtitle.setText(mContext.getString(R.string.rupee) + " " + plansList.get(position).getPrice());
         holder.wv_description.getSettings().setJavaScriptEnabled(true);
         String description = plansList.get(position).getDescription();
         String mime = "text/html";
@@ -79,31 +80,36 @@ public class ViewpagerAdapter extends RecyclerView.Adapter<ViewpagerAdapter.Plan
                     @Override
                     public void onClick(SweetAlertDialog sweetAlertDialog) {
                         UserSessionManager sessionManager = new UserSessionManager(mContext);
-                        if (sessionManager.checkLogin())
-                            ((Activity) mContext).finish();
-                        HashMap<String, String> user = sessionManager.getUserDetails();
-                        String auth_token = user.get(UserSessionManager.KEY_AuthToken);
-                        String mobilenumber = user.get(UserSessionManager.KEY_Mobile);
-                        double amount = Integer.parseInt(plansList.get(position).getPrice());
-                        String planid = plansList.get(position).getPlan_id();
-                        double discount = Double.parseDouble(plansList.get(position).getDiscount());
-                        String product_title = plansList.get(position).getTitle();
+                        if (sessionManager.checkLogin()) {
+                            Intent intent = new Intent(mContext, LoginActivity.class);
+                            mContext.startActivity(intent);
+                        } else {
+                            HashMap<String, String> user = sessionManager.getUserDetails();
+                            String auth_token = user.get(UserSessionManager.KEY_AuthToken);
+                            String mobilenumber = user.get(UserSessionManager.KEY_Mobile);
+                            double amount = Integer.parseInt(plansList.get(position).getPrice());
+                            String planid = plansList.get(position).getPlan_id();
+                            double discount = Double.parseDouble(plansList.get(position).getDiscount());
+                            String product_title = plansList.get(position).getTitle();
 
-                        sessionManager.createPlanData(planid, product_title, amount + "", discount + "");
+                            sessionManager.createPlanData(planid, product_title, amount + "", discount + "");
 
-                        Intent intent = new Intent(mContext, PaymentActivity.class);
-                        intent.putExtra("product_title", product_title);
-                        intent.putExtra("auth_token", auth_token);
-                        intent.putExtra("mobilenumber", mobilenumber);
-                        intent.putExtra("amount", amount);
-                        intent.putExtra("planid", planid);
-                        intent.putExtra("discount", discount);
-                        intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
+                            Intent intent = new Intent(mContext, PaymentActivity.class);
+                            intent.putExtra("product_title", product_title);
+                            intent.putExtra("auth_token", auth_token);
+                            intent.putExtra("mobilenumber", mobilenumber);
+                            intent.putExtra("amount", amount);
+                            intent.putExtra("planid", planid);
+                            intent.putExtra("discount", discount);
+                            intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
 
-                        mContext.startActivity(intent);
+                            mContext.startActivity(intent);
 
-                        Toast.makeText(mContext, "Subscription Success", Toast.LENGTH_SHORT).show();
-                        pDialog.dismissWithAnimation();
+                            Toast.makeText(mContext, "Subscription Success", Toast.LENGTH_SHORT).show();
+                            pDialog.dismissWithAnimation();
+                        }
+//                            ((Activity) mContext).finish();
+
                     }
                 });
                 pDialog.setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {

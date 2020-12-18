@@ -53,7 +53,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:fontFamily="@font/open_sans"
-        android:background="@drawable/roundedbackground"
         android:text="Apply Changes"
         android:textColor="@color/colorWhite" />
 </LinearLayout>

@@ -16,7 +16,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup,android:usesCleartextTraffic">
-        <activity android:name=".DeliveryAddressActivity"></activity>
+        <activity
+            android:name=".ui.NewAddressActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name=".ui.DeliveryAddressActivity"
+            android:theme="@style/MaterialTheme" />
         <activity
             android:name=".ui.PaymentActivity"
             android:parentActivityName=".ui.PlanActivity"

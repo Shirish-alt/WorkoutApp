@@ -24,4 +24,12 @@
     <string name="subscription_title">Title</string>
     <string name="subscription_amount">Amount</string>
     <string name="subscription_discount">Discount</string>
+    <string name="menu_mysubscription">My Subscription</string>
+    <string name="title_pt">PT</string>
+    <string name="title_live">Live</string>
+    <string name="menu_workoutlibrary">Workouts Library</string>
+    <string name="menu_myactivity">My Activity Today</string>
+    <string name="menu_login">Login</string>
+    <string name="work_in_progress">Work in progress</string>
+    <string name="rupee">\u20B9</string>
 </resources>
