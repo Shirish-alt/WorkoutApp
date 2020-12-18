@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-import com.infostackresearch.homefit.DeliveryAddressActivity;
+import com.infostackresearch.homefit.ui.DeliveryAddressActivity;
 import com.infostackresearch.homefit.ui.LoginActivity;
 import com.infostackresearch.homefit.ui.PlanActivity;
 
@@ -71,6 +71,8 @@ public class UserSessionManager {
         editor.commit();
     }
 
+    /*Following code is to create address in session for user delivery*/
+
     public void createDeliveryAddress(String addressid, String address, String deliverTo) {
         editor.putBoolean(IS_ADDRESS_CHOSEN, true);
         editor.putString(KEY_AddressID, addressid);
@@ -87,16 +89,16 @@ public class UserSessionManager {
     public boolean checkLogin() {
         if (!(this.isUserLoggedIn())) {
 //            user is not logged in redirect to login activity
-            Intent intent = new Intent(mContext, LoginActivity.class);
+//            Intent intent = new Intent(mContext, LoginActivity.class);
 
 //            Close all activities from stack
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
 //            Add new flag to start new Activity
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
 //            Starting login activity
-            mContext.startActivity(intent);
+//            mContext.startActivity(intent);
 
             return true;
         }
@@ -188,7 +190,7 @@ public class UserSessionManager {
     }
 
 
-    public void logoutUser(String emp_code) {
+    public void logoutUser() {
 
         /**
          * Clearing all data from shared preferrences

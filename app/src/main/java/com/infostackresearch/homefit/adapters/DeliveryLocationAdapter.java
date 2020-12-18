@@ -34,12 +34,12 @@ public class DeliveryLocationAdapter extends RecyclerView.Adapter<DeliveryLocati
     @Override
     public void onBindViewHolder(@NonNull DeliveryLocationViewHolder holder, int position) {
         holder.tv_deliverylocation.setText(deliveryLocationList.get(position).getAddress());
-        holder.tv_deliverto.setText(deliveryLocationList.get(position).getDeliverto());
+        holder.tv_deliverto.setText(deliveryLocationList.get(position).getName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 UserSessionManager userSessionManager = new UserSessionManager(mContext);
-                userSessionManager.createDeliveryAddress(deliveryLocationList.get(position).getAddressid(), deliveryLocationList.get(position).getAddress(), deliveryLocationList.get(position).getDeliverto());
+                userSessionManager.createDeliveryAddress(deliveryLocationList.get(position).getAddressid(), deliveryLocationList.get(position).getAddress(), deliveryLocationList.get(position).getName());
                 ((Activity) mContext).finish();
             }
         });

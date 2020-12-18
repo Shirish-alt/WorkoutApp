@@ -1,8 +1,13 @@
 package com.infostackresearch.homefit.ui.profile;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -24,6 +29,7 @@ import com.infostackresearch.homefit.http.ClientInstance;
 import com.infostackresearch.homefit.http.NetworkConnectivity;
 import com.infostackresearch.homefit.models.ProfileSubscription;
 import com.infostackresearch.homefit.sessions.UserSessionManager;
+import com.infostackresearch.homefit.ui.EditProfileActivity;
 
 import java.util.HashMap;
 
@@ -57,7 +63,7 @@ public class ProfileFragment extends Fragment {
         mViewModel =
                 ViewModelProviders.of(this).get(ProfileViewModel.class);
         View root = inflater.inflate(R.layout.fragment_profile, container, false);
-
+        setHasOptionsMenu(true);
         sessionManager = new UserSessionManager(getActivity().getApplicationContext());
         networkConnectivity = new NetworkConnectivity(getActivity().getApplicationContext());
         progressDialog = new ProgressDialog(getContext());
@@ -173,4 +179,23 @@ public class ProfileFragment extends Fragment {
             }
         });
     }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.profile_edit_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_editprofile:
+                Intent intent = new Intent(getContext(), EditProfileActivity.class);
+                startActivity(intent);
+                Log.i("item id ", item.getItemId() + "");
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 }

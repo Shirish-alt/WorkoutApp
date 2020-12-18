@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.infostackresearch.homefit.DeliveryAddressActivity;
 import com.infostackresearch.homefit.R;
 import com.infostackresearch.homefit.http.APIService;
 import com.infostackresearch.homefit.http.ClientInstance;
@@ -174,63 +173,67 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
 
     @Override
     public void onPaymentSuccess(String razorpayPaymentID) {
-        APIService service = ClientInstance.getRetrofitInstance().create(APIService.class);
-        Call<SubscribeUser> call = service.doSubscription(new SubscriptionData(planid, razorpayPaymentID, "2020-12-10", "2021-12-09", "12345", total_amount + ""), "Bearer " + auth_token);
-        call.enqueue(new Callback<SubscribeUser>() {
-            @Override
-            public void onResponse(Call<SubscribeUser> call, Response<SubscribeUser> response) {
-                if (response.isSuccessful()) {
-                    if (response.body().isSuccess()) {
-                        SweetAlertDialog pDialog = new SweetAlertDialog(PaymentActivity.this, SweetAlertDialog.SUCCESS_TYPE);
-                        pDialog.setTitleText("Success");
-                        pDialog.setContentText("Your subscription is successful.");
-                        pDialog.setConfirmButton("Ok", new SweetAlertDialog.OnSweetClickListener() {
-                            @Override
-                            public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                SubscriptionData subscriptionData = response.body().getSubscriptionData();
-                                OrderData orderData = response.body().getOrderData();
-                                Intent intent = new Intent(PaymentActivity.this, MySubscriptionActivity.class);
-                                intent.putExtra("id", subscriptionData.getId());
-                                intent.putExtra("user_id", subscriptionData.getUser_id());
-                                intent.putExtra("subscription_id", subscriptionData.getSubscription_id());
-                                intent.putExtra("price", subscriptionData.getPrice());
-                                intent.putExtra("paymentid", subscriptionData.getPaymentid());
-                                intent.putExtra("start_date", subscriptionData.getStart_date());
-                                intent.putExtra("end_date", subscriptionData.getEnd_date());
-                                intent.putExtra("is_expired", subscriptionData.getIs_expired());
-                                intent.putExtra("created_at", subscriptionData.getCreated_at());
-                                intent.putExtra("updated_at", subscriptionData.getUpdated_at());
-                                intent.putExtra("user_subscription_id", orderData.getUser_subscription_id());
-                                intent.putExtra("order_status", orderData.getStatus());
-                                intent.putExtra("order_number", orderData.getOrder_no());
-                                intent.putExtra("order_date", orderData.getOrder_date());
-                                finish();
-                                startActivity(intent);
-                            }
-                        });
-                        pDialog.show();
+        try {
+            APIService service = ClientInstance.getRetrofitInstance().create(APIService.class);
+            Call<SubscribeUser> call = service.doSubscription(new SubscriptionData(planid, razorpayPaymentID, "2020-12-10", "2021-12-09", planid, total_amount + ""), "Bearer " + auth_token);
+            call.enqueue(new Callback<SubscribeUser>() {
+                @Override
+                public void onResponse(Call<SubscribeUser> call, Response<SubscribeUser> response) {
+                    if (response.isSuccessful()) {
+                        if (response.body().isSuccess()) {
+                            SweetAlertDialog pDialog = new SweetAlertDialog(PaymentActivity.this, SweetAlertDialog.SUCCESS_TYPE);
+                            pDialog.setTitleText("Success");
+                            pDialog.setContentText("Your subscription is successful.");
+                            pDialog.setConfirmButton("Ok", new SweetAlertDialog.OnSweetClickListener() {
+                                @Override
+                                public void onClick(SweetAlertDialog sweetAlertDialog) {
+                                    SubscriptionData subscriptionData = response.body().getSubscriptionData();
+                                    OrderData orderData = response.body().getOrderData();
+                                    Intent intent = new Intent(PaymentActivity.this, MySubscriptionActivity.class);
+                                    intent.putExtra("id", subscriptionData.getId());
+                                    intent.putExtra("user_id", subscriptionData.getUser_id());
+                                    intent.putExtra("subscription_id", subscriptionData.getSubscription_id());
+                                    intent.putExtra("price", subscriptionData.getPrice());
+                                    intent.putExtra("paymentid", subscriptionData.getPaymentid());
+                                    intent.putExtra("start_date", subscriptionData.getStart_date());
+                                    intent.putExtra("end_date", subscriptionData.getEnd_date());
+                                    intent.putExtra("is_expired", subscriptionData.getIs_expired());
+                                    intent.putExtra("created_at", subscriptionData.getCreated_at());
+                                    intent.putExtra("updated_at", subscriptionData.getUpdated_at());
+                                    intent.putExtra("user_subscription_id", orderData.getUser_subscription_id());
+                                    intent.putExtra("order_status", orderData.getStatus());
+                                    intent.putExtra("order_number", orderData.getOrder_no());
+                                    intent.putExtra("order_date", orderData.getOrder_date());
+                                    finish();
+                                    startActivity(intent);
+                                }
+                            });
+                            pDialog.show();
+                        } else {
+                            SweetAlertDialog pDialog = new SweetAlertDialog(PaymentActivity.this, SweetAlertDialog.ERROR_TYPE);
+                            pDialog.setTitleText("Server Error");
+                            pDialog.setContentText("Internal Error occured");
+                            pDialog.show();
+                        }
                     } else {
                         SweetAlertDialog pDialog = new SweetAlertDialog(PaymentActivity.this, SweetAlertDialog.ERROR_TYPE);
                         pDialog.setTitleText("Server Error");
-                        pDialog.setContentText("Internal Error occured");
+                        pDialog.setContentText("Response is not in correct format");
                         pDialog.show();
                     }
-                } else {
+                }
+
+                @Override
+                public void onFailure(Call<SubscribeUser> call, Throwable t) {
                     SweetAlertDialog pDialog = new SweetAlertDialog(PaymentActivity.this, SweetAlertDialog.ERROR_TYPE);
                     pDialog.setTitleText("Server Error");
-                    pDialog.setContentText("Response is not in correct format");
+                    pDialog.setContentText("Internal Error occured");
                     pDialog.show();
                 }
-            }
-
-            @Override
-            public void onFailure(Call<SubscribeUser> call, Throwable t) {
-                SweetAlertDialog pDialog = new SweetAlertDialog(PaymentActivity.this, SweetAlertDialog.ERROR_TYPE);
-                pDialog.setTitleText("Server Error");
-                pDialog.setContentText("Internal Error occured");
-                pDialog.show();
-            }
-        });
+            });
+        } catch (Exception e) {
+            Toast.makeText(PaymentActivity.this, e.getMessage() + "", Toast.LENGTH_SHORT).show();
+        }
 //        Toast.makeText(PaymentActivity.this, "Payment successful - Payment ID - " + razorpayPaymentID, Toast.LENGTH_SHORT).show();
     }
 

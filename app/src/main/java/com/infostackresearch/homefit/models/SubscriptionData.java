@@ -6,7 +6,6 @@ public class SubscriptionData {
     @SerializedName("id")
     String id;
 
-    @SerializedName("plan_id")
     String plan_id;
 
     @SerializedName("user_id")
@@ -35,6 +34,23 @@ public class SubscriptionData {
 
     @SerializedName("updated_at")
     String updated_at;
+
+    @SerializedName("order")
+    OrderData orderData;
+
+    public SubscriptionData(String id, String user_id, String subscription_id, String price, String paymentid, String start_date, String end_date, String is_expired, String created_at, String updated_at, OrderData orderData) {
+        this.id = id;
+        this.user_id = user_id;
+        this.subscription_id = subscription_id;
+        this.price = price;
+        this.paymentid = paymentid;
+        this.start_date = start_date;
+        this.end_date = end_date;
+        this.is_expired = is_expired;
+        this.created_at = created_at;
+        this.updated_at = updated_at;
+        this.orderData = orderData;
+    }
 
     public SubscriptionData(String plan_id, String paymentid, String start_date, String end_date, String subscription_id, String price) {
         this.plan_id = plan_id;
